@@ -1,9 +1,11 @@
 import { createApp } from 'vue'
-import Axios from './plugins/axios'
+import Axios from './plugins/http'
 import Vueaxios from 'vue-axios'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+
+import './config/registerServiceWorker'
 
 import { Button } from 'vant'
 

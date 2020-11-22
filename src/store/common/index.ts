@@ -10,7 +10,7 @@ import { CommonState } from './types'
 import { RootState } from '../types'
 import Vue from 'vue'
 // import { api } from '@/api'
-import axios from '@/plugins/axios'
+import axios from '@/plugins/http'
 import { handleWebStorage } from '@/plugins/utils'
 
 // state

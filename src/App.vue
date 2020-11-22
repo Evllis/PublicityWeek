@@ -1,8 +1,23 @@
 <template>
     <div>
         <router-view />
+        <Loading v-if="$store.state.isLoading"></Loading>
     </div>
 </template>
+
+<script lang="ts">
+    import { Options, Vue } from 'vue-class-component'
+    import Loading from '@/components/loading.vue'
+
+    @Options({
+        components: {
+            Loading
+        }
+    })
+
+    export default class App extends Vue {
+    }
+</script>
 
 <style lang="less">
 #app {

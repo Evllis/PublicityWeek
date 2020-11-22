@@ -6,7 +6,8 @@ import { common } from './common/index'
 
 export default createStore({
     state: {
-        version: '1.0.0'
+        version: '1.0.0',
+        isLoading: false
     },
     mutations: {
     },

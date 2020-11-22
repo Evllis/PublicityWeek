@@ -11,7 +11,7 @@ import { RootState } from '../types'
 import Vue from 'vue'
 import router from '../../router'
 // import { api } from '@/api';
-import axios from '@/plugins/axios'
+import axios from '@/plugins/http'
 import { handleWebStorage } from '@/plugins/utils'
 
 // 从本地获取userName
@@ -32,6 +32,7 @@ const getSessionId = () => {
 
 // state
 export const state: GlobalState = {
+    isLoading: true,
     userName: getUserName(),
     userId: getUserId(),
     sessionId: '',
@@ -40,6 +41,9 @@ export const state: GlobalState = {
 
 // getters
 export const getters: GetterTree<GlobalState, RootState> = {
+    getLoadingStatus(state: GlobalState): boolean {
+        return state.isLoading
+    }
     // getUserName(state: GlobalState): string {
     //   return state.userName;
     // },
