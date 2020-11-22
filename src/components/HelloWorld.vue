@@ -138,7 +138,6 @@
 
     export default class HelloWorld extends Vue {
         msg!: string;
-        api: any = process.env.VUE_APP_PORT
     }
 
 </script>
