@@ -1,0 +1,31 @@
+/*
+ * @Description: main scss
+ * @Author: QiangWei
+ * @Date: 2019-12-26 14:37:09
+ * @LastEditors  : QiangWei
+ * @LastEditTime : 2019-12-26 14:43:05
+ */
+@import './index.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: $bg-color-default;
+}
+
+body {
+    font-family: "system-ui, Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}

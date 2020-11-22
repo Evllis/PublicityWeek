@@ -1,0 +1,17 @@
+/*
+ * @Description: 适配方案，直接使用vw作为css单位
+ * @Author: QiangWei
+ * @Date: 2019-12-26 12:02:26
+ * @LastEditors  : QiangWei
+ * @LastEditTime : 2019-12-26 16:03:41
+ */
+
+// 使用vw、wh作为屏幕适配方案 iPhone 6尺寸作为设计稿基准
+$vw_base: 750;
+
+/*
+ * 定义vw函数，在样式中使用，定义动态尺寸
+ */
+@function vw($px) {
+    @return $px / $vw_base * 100vw;
+}
